@@ -1,0 +1,39 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main {
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 1rem 10%;
+  z-index: 5;
+  position: absolute;
+}
+
+.label {
+  display: inline;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.label div {
+  padding-left: 0.4rem;
+  display: inline;
+}
+
+.right .label {
+  padding-left: 3rem;
+}
+
+.home {
+  display: flex;
+  align-items: center;
+}
+
+.home img {
+  filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(317deg)
+    brightness(103%) contrast(102%);
+}

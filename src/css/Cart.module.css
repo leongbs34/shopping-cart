@@ -1,0 +1,146 @@
+.bg {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 6;
+  top: 0;
+}
+
+.main {
+  background-color: white;
+  height: 100%;
+  right: 0;
+  width: 30%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+p {
+  margin: 0;
+}
+
+.close {
+  cursor: pointer;
+  font-size: 2rem;
+  position: absolute;
+  right: 2rem;
+  transition: all 0.3s;
+}
+
+.bag {
+  position: absolute;
+  color: rgba(0, 0, 0, 0.08);
+  width: 100%;
+  top: 45%;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.close:hover {
+  color: red;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.header p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.cart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.cartItems {
+  display: flex;
+  padding: 1rem 0.4rem;
+}
+
+.cartItems img {
+  width: 25%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.details {
+  margin-left: 0.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.details li {
+  list-style: none;
+}
+
+.gameTitle {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.upperRight {
+  transition: all 0.3s;
+  height: max-content;
+  position: absolute;
+  right: 20px;
+}
+
+.upperRight:hover {
+  color: red;
+}
+
+.footer {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  height: 15%;
+  width: inherit;
+  background-color: white;
+  box-shadow: 0 -1px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price p:last-child {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer button {
+  background: rgb(13, 170, 20);
+  color: white;
+  font-weight: bold;
+  font-size: 1.1rem;
+  padding: 0.9rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 1rem;
+  transition: all 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.footer button:hover {
+  background: rgb(10, 133, 16);
+}
