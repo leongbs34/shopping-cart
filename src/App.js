@@ -56,13 +56,13 @@ function App() {
     <div className="App">
       <Header showCart={showCart} cartAmount={cartAmount} />
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/shopping-cart/'>
           <Home />
         </Route>
-        <Route exact path='/shop'>
+        <Route exact path='/shopping-cart/shop'>
           <Shop addGameToCart={addGameToCart} />
         </Route>
-        <Route exact path='/shop/:categoryId'>
+        <Route exact path='/shopping-cart/shop/:categoryId'>
           <Shop addGameToCart={addGameToCart} />
         </Route>
       </Switch>

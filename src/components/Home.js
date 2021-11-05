@@ -8,7 +8,7 @@ function Home() {
       <div className={styles.main}>
         <h2>Digital Games Shop</h2>
         <p>Shop for any games at a cheap price</p>
-        <Link to='/shop'>
+        <Link to='/shopping-cart/shop'>
           <div className={styles.btnShop}>SHOP NOW</div>
         </Link>
       </div>

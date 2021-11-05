@@ -5,12 +5,12 @@ import styles from '../css/Header.module.css'
 function Header({showCart, cartAmount}) {
   return (
     <div className={`${styles.flex} ${styles.main}`}>
-      <Link className={`${styles.label} ${styles.home}`} to='/'>
-        <img src='logo.png' alt="Space Invader" width='40px'/>
+      <Link className={`${styles.label} ${styles.home}`} to='/shopping-cart/'>
+        <img src='../images/logo.png' alt="Space Invader" width='40px'/>
         <div>Pixel Games</div>
       </Link>
       <div className={styles.right} >
-        <Link className={styles.label} to='/shop'>
+        <Link className={styles.label} to='/shopping-cart/shop'>
           <i className="fa fa-shopping-bag" aria-hidden="true"></i>
           <div>Shop</div> 
         </Link>

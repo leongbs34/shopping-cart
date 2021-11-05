@@ -45,10 +45,10 @@ function Shop({addGameToCart}) {
         <div className={styles.sidebar}>
           <div className={styles.title}>
             <Switch>
-              <Route exact path='/shop'>
+              <Route exact path='/shopping-cart/shop'>
                 All Games
               </Route>
-              <Route exact path='/shop/:categoryId'>
+              <Route exact path='/shopping-cart/shop/:categoryId'>
                 {category && category.name}
               </Route>
             </Switch>
@@ -56,7 +56,7 @@ function Shop({addGameToCart}) {
           <div className={styles.category}>
             {categories.map((category) => (
               <Link 
-                to={`/shop/${category.id}`}
+                to={`/shopping-cart/shop/${category.id}`}
                 key={category.id}
               >
                 <div>{category.name}</div>
@@ -66,7 +66,7 @@ function Shop({addGameToCart}) {
         </div>
         <div className={styles.main}>
           <Switch>
-            <Route exact path='/shop'>
+            <Route exact path='/shopping-cart/shop'>
               {Games && Games.map(game => (
                 <div key={game.id} className={styles.card}>
                   <img src={game.img} alt={game.placeholder} width='257' height='145'/>
@@ -78,7 +78,7 @@ function Shop({addGameToCart}) {
                 </div>
               ))}
             </Route>
-            <Route exact path='/shop/:categoryId'>
+            <Route exact path='/shopping-cart/shop/:categoryId'>
               {gamesSortedByCategory.map(game => (
                 <div key={game.id} className={styles.card}>
                   <img src={game.img} alt={game.placeholder} width='257' height='145'/>
