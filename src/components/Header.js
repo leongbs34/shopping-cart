@@ -1,12 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styles from '../css/Header.module.css'
+import logo from '../images/logo.png'
 
 function Header({showCart, cartAmount}) {
   return (
     <div className={`${styles.flex} ${styles.main}`}>
       <Link className={`${styles.label} ${styles.home}`} to='/shopping-cart/'>
-        <img src='../images/logo.png' alt="Space Invader" width='40px'/>
+        <img src={logo} alt="Space Invader" width='40px'/>
         <div>Pixel Games</div>
       </Link>
       <div className={styles.right} >
